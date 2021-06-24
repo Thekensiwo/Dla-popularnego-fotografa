@@ -1,0 +1,187 @@
+$ml: 9.2rem;
+
+@media(min-width: 550px){
+    .about-me-1{
+
+        h2{
+            &::after{
+                width: 20%;
+            }
+
+            .h2-underline{
+                position: absolute;
+                background: #008C8C;
+                border-radius: 10px;
+                left: 0%;
+                bottom: 12%;
+                //width: 62%;
+                width: 0%;
+                height: 7px;
+                opacity: 1;
+            }
+        }
+        
+        p.about-p{
+            font-size: 2rem;
+            padding: 1rem 10rem;
+            opacity: 0;
+        }
+
+        button{
+            opacity: 0;
+        }
+    }
+    .about-me-2{
+
+        img{
+            opacity: 0;
+        }
+    }
+    section.about-me > .camera{
+        bottom: -3%;
+        left: -1%;
+        opacity: 0;
+    }
+}
+
+@media(min-width: 700px){
+    .about-me-1{
+        p.about-p{
+            font-size: 2rem;
+            padding: 1rem 15rem;
+        }
+    }
+}
+
+@media(min-width: 1200px){
+    .about-me{
+        flex-direction: row;
+        padding-bottom: 9rem;
+
+        h2,p{
+            text-align: left;
+            font-weight: 500;
+        }
+
+        h2{
+            width: max-content;
+            margin-left: $ml;
+            padding-top: 7rem;
+            font-size: 7.9rem;
+            opacity: 0;
+
+            &::after{
+                width: 52%;
+                height: 0.8rem;
+                bottom: 10%;
+                left: $ml;
+                transform: none;
+                box-shadow: 0px 4px 25px 0px rgba(0,140,140,0.5);
+            }
+        }
+        
+        p.about-p{
+            font-size: 2.2rem;
+            font-weight: 500;
+            width: 45ch;
+            padding: 1rem 0rem;
+            padding-left: $ml;
+            color: #111111;
+        }
+
+        
+        .p1,.p2{
+            padding: 0rem 0rem 0rem $ml;
+        }
+
+        p.p1{
+            padding-top: 3.4rem;
+        }
+        
+        .p3{
+            padding: 4rem 0rem 0rem $ml;
+        }
+
+        .about-btn{
+            width: 26rem;
+            height: 5.8rem;
+            background: #008C8C;
+            color: white;
+            font-size: 2.7rem;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            display: block;
+            margin-top: 13rem;
+            margin-left: $ml;
+            box-shadow: 0px 4px 25px 0px rgba(0,140,140,0.5);
+            transition: 0.4s ease;
+            cursor: pointer;
+            
+            &:hover{
+                background: #008181;
+                box-shadow: 0px 4px 25px 1px rgba(0,140,140,0.4);
+            }
+
+            &:focus{
+                background: #009c9c;
+            }
+        }
+
+        .camera{
+            bottom: 29.5%;
+            left: 5.5rem;
+        }
+
+        .about-me-1{
+            flex: 1;
+        }
+
+        .about-me-2{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+
+            img{
+                width: 40rem;
+                height: 64rem;
+                margin-top: 5rem;
+                margin-right: 5rem;
+            }
+        }
+        
+        .lines{
+            display: block;
+            width: 32rem;
+            height: 50rem;
+            position: absolute;
+            bottom: -28%;
+            left: 80%;
+            z-index: -3;
+        }
+    }
+}
+
+@media(min-width: 1550px){
+
+    .about-me{
+
+        .about-me-2{
+
+            img{
+                margin-right: 13rem;
+            }
+        }
+        svg.camera{
+            left: 3%;
+            bottom: 33%;
+        }
+        .lines{
+            bottom: -32%;
+            left: 85%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat:wght@400;500;600&display=swap');
+
+@import "_header";
+@import "_about";
+@import "_gallery";
+@import "_pricing";
+@import "_contact";
+@import "_footer";
+
+@import "_header-media.scss";
+@import "_about-media.scss";
+@import "_gallery-media";
+@import "_pricing-media.scss";
+@import "_contact-media.scss";
+@import "_footer-media.scss";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    background: white;
+    font-family: $ms;
+    overflow-x: hidden;
+    position: relative;
+}

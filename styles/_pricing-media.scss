@@ -1,0 +1,303 @@
+
+@media(min-width: 525px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                padding: 2.5rem 0rem;
+                width: 95%;
+
+                h3{
+                    font-size: 2.7rem;
+                }
+    
+                h2{
+                    font-size: 3.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 550px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                padding: 2.5rem 0rem;
+                width: 90%;
+
+                h3{
+                    font-size: 2.7rem;
+                }
+    
+                h2{
+                    font-size: 3.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 600px){
+
+    .pricing{
+        .prices-cont{
+    
+            .item-cont{
+                padding: 2.5rem 0rem;
+                width: 87%;
+
+                h3{
+                    font-size: 2.9rem;
+                }
+    
+                h2{
+                    font-size: 4rem;
+                }
+    
+                .item-profits{
+                    width: 85%;
+                    margin-top: 2.2rem;
+
+                    li{
+                        
+                        svg{
+                            min-width: 2.4rem;
+                            height: 2.4rem;
+                        }
+
+                        span{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+                button{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 700px){
+
+    .pricing{
+        .prices-cont{
+    
+            .item-cont{
+                padding: 2.5rem 0rem;
+                width: 72%;
+
+                h3{
+                    font-size: 3.1rem;
+                }
+    
+                h2{
+                    font-size: 4.2rem;
+                }
+    
+                .item-profits{
+                    width: 85%;
+                    margin-top: 2.2rem;
+
+                    li{
+                        
+                        svg{
+                            min-width: 2.4rem;
+                            height: 2.4rem;
+                        }
+
+                        span{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+                button{
+                    width: 85%;
+                    cursor: pointer;
+                    transition: 0.35s ease;
+                    
+                    &:hover{
+                        background: #007a7a;
+                        box-shadow: 0px 4px 25px 1px rgba(0,140,140,0.4);
+                    }
+        
+                    &:focus{
+                        background: #009c9c;
+                    }
+                }
+
+                .sale-cont{
+                    width: 17rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 850px){
+
+    .pricing{
+        .prices-cont{
+    
+            .item-cont{
+                width: 65%;
+
+                h3{
+                    font-size: 3.1rem;
+                }
+    
+                .item-profits{
+
+                    li{
+                        
+                        svg{
+                            min-width: 2.4rem;
+                            height: 2.4rem;
+                        }
+
+                        span{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+                .sale-cont{
+                    width: 19rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 950px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media(min-width: 1000px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 1050px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                width: 47%;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1150px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+            }
+        }
+    }
+}
+
+@media(min-width: 1250px){
+
+    .pricing{
+
+        h2{
+            padding-top: 5rem;
+            font-size: 5rem;
+        }
+
+        .prices-cont{
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+            .item-cont{
+                padding: 2.5rem 0rem;
+                flex: 1;
+                margin: 0rem 1.3rem;
+                margin-top: 5rem;
+
+
+                .sale-cont{
+                    width: 16rem;
+                    height: 2.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1500px){
+
+    .pricing{
+        .prices-cont{
+            width: 80%;
+            .item-cont{
+                margin: 0rem 2.8rem;
+                margin-top: 6rem;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 1600px){
+
+    .pricing{
+        .prices-cont{
+            .item-cont{
+                margin: 0rem 3.6rem;
+                margin-top: 6rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1750px){
+
+    .pricing{
+
+        h2{
+            font-size: 7rem;
+            padding: 5rem 0rem 3rem 0rem;
+        }
+        
+        .prices-cont{
+            .item-cont{
+                margin: 0rem 6.5rem;
+                margin-top: 6rem;
+
+                .sale-cont{
+                    width: 17rem;
+                    height: 2.8rem;
+                }
+
+                button{
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+}

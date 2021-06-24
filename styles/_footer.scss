@@ -1,0 +1,46 @@
+footer{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+
+    .footer-inner{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        
+        & > *{
+            width: max-content;
+        }
+
+        .social-media-icons{
+            display: none;
+        }
+
+        h4{
+            font-weight: 600;
+            font-size: 1.5rem;
+            width: max-content;
+        }
+
+        a{
+            display: block;
+            padding: 0.4rem 0rem;
+            text-decoration: none;
+            color: #848484;
+            font-size: 1.1rem;
+            font-weight: 500;
+            width: max-content;
+        }
+
+        .a-first{
+            margin-top: 0.8rem;
+        }
+
+        svg{
+            width: 2.7rem;
+            height: 2.7rem;
+        }
+
+    }
+}

@@ -1,0 +1,202 @@
+@media(min-width: 750px){
+
+    header{
+
+        h2{
+            font-size: 4.4rem;
+            text-shadow: 0px 5px 10px rgba(0,0,0,0.7);
+            animation: fromTop2 2.6s ease;
+        }
+        
+        h3{
+            font-size: 2.6rem;
+            padding: 0rem 12rem;
+            text-shadow: 0px 5px 10px rgba(0,0,0,0.7);
+            opacity: 0;
+            animation: fromTop2 2s 1.2s ease forwards;
+        }
+
+        button{
+            width: 27rem;
+            height: 5.5rem;
+            font-size: 2.1rem;
+            margin-top: 5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.35s ease;
+            opacity: 0;
+            animation: fromTop2 2s 3.2s ease-out forwards;
+            
+            &:hover{
+                background: #007a7a;
+                box-shadow: 0px 4px 25px 1px rgba(0,140,140,0.4);
+            }
+
+            &:focus{
+                background: #009c9c;
+            }
+        }
+
+        .navigation{
+
+            .navigation-inner{
+
+                .logo{
+                    padding-left: 4rem;
+                    font-size: 3.7rem;
+                }
+                
+                nav{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex: 3;
+
+                    a{
+                        font-family: $kalam;
+                        color: white;
+                        font-size: 2.3rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                        transition: 0.3s ease;
+                        opacity: 0;
+
+                        &:hover{
+                            font-size: 2.4rem;
+                            color: rgb(207, 207, 207);
+                        }
+                    }
+
+                    a:nth-child(1){
+                        animation: fromLeft 1.5s 4s ease forwards;
+                    }
+
+                    a:nth-child(2){
+                        animation: fromLeft 1.5s 4.4s ease forwards;
+                    }
+
+                    a:nth-child(3){
+                        animation: fromLeft 1.5s 4.8s ease forwards;
+                    }
+                }
+
+                .hamburger{
+                    display: none;
+                    background: blue;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 840px){
+    header{
+
+        .cta-cont{
+
+            h2{
+                padding-top: 3rem;
+            }
+
+            button{
+                margin-top: 9rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 1250px){
+    header{
+
+        .cta-cont{
+
+            h2{
+                font-size: 5.5rem;
+            }
+
+            h3{
+                font-size: 2.8rem;
+                padding: 0rem;
+            }
+
+            button{
+                margin-top: 12rem;
+            }
+        }
+
+        .navigation{
+
+            .navigation-inner{
+                
+                .logo{
+                    font-size: 4.6rem;
+                }
+
+                nav{
+                    flex: 2;
+
+                    a{
+                        font-family: $kalam;
+                        color: white;
+                        font-size: 2.3rem;
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(min-width: 1650px){
+    header{
+
+        .cta-cont{
+
+            h2{
+                font-size: 6rem;
+                padding-top: 5rem;
+            }
+
+            h3{
+                font-size: 3.5rem;
+                width: 35ch;
+                margin: 0 auto;
+                margin-top: 1rem;
+            }
+
+            button{
+                width: 29rem;
+                height: 5.9rem;
+                font-size: 2.4rem;
+                margin-top: 10rem;
+            }
+        }
+
+        .navigation{
+
+            .navigation-inner{
+                
+                nav{
+                    flex: 1.6;
+
+                    a{
+                        font-family: $kalam;
+                        color: white;
+                        font-size: 2.7rem;
+                        font-weight: 400;
+                        text-decoration: none;
+
+                        &:hover{
+                            font-size: 2.8rem;
+                            color: rgb(207, 207, 207);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

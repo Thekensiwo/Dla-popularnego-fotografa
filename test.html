@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 300vh;
+        }
+
+        h2 {
+            opacity: 0;
+        }
+
+        @keyframes anim1 {
+            0% {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>tesciwo</h2>
+
+
+    <script>
+        const h = document.querySelector('h2')
+        let intersected = false;
+
+        let x = new IntersectionObserver(entries => {
+
+            if (entries[0].isIntersecting && intersected == false) {
+
+                entries[0].target.style.animation = 'anim1 2s ease forwards'
+                intersected = true;
+            }
+        })
+
+        x.observe(h)
+    </script>
+
+</body>
+
+</html>

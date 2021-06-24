@@ -1,0 +1,100 @@
+.gallery{
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background: #121213;
+    padding-bottom: 5rem;
+
+    h2{
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 500;
+        padding: 3rem;
+        padding-top: 4rem;
+    }
+
+    .gallery-cont{
+        width: 90%;
+        height: max-content;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-auto-rows: 150px;
+        grid-gap: 20px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+    }
+
+    .v-stretch{
+        grid-row: span 2;
+    }
+
+    .h-stretch{
+        grid-column: span 2;
+    }
+
+    .b-stretch{
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .watchmore,.gallery-svg{
+        display: none;
+    }
+}
+
+
+/* --- Modal --- */
+
+.modal-bg{
+    position: fixed;
+    inset: 0%;
+    background: rgba(0,0,0,0.75);
+    z-index: 20000;
+    transition: 0.25s ease;
+    display: grid;
+    place-items: center;
+}
+
+.modal-bg-off{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal-content-cont{
+    background: blue;
+    width: 85%;
+    height: 50%;
+    background: #121213;
+    box-shadow: 0px 4px 35px 4px rgba(0,0,0,0.8);
+    z-index: 20001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    @include center;
+
+    .modal-img-cont{
+        width: 100%;
+        height: 100%;
+        @include center;
+
+        .modal-img{
+            width: 88%;
+            height: 85%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+    }
+}
